@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>/*The style element is added here because i am using internal css*/
+        p{/*here p is an element selector in css since p is for the paragraph element in the html text*/
+            color:cadetblue; font-size: 20px; background-color: black;
+            /*color, font-size and background-color are properties in css*/
+            /*cadetblue, 20px, black are values in css*/
+        }
+        #p1{/*p1 is an id selector*/
+            color: darkmagenta; font-size: 40px;
+        }
+        .p2{/*p2 is a class selector*/
+            color: darkmagenta; font-size: 40px; background-color: burlywood;
+        }
+        *{/*The * denotes the universal selector*/
+            background-color: chartreuse;/*This changes the background color of the entire page 
+                                            besides those already specified by the element, id and class selector*/
+        }
+        h2,button{
+            color:blue; font-size: 40px; background-color: rgb(204, 118, 14);
+        }
+    </style>
+</head>
+<body>
+    <p>Web development is the work involved in developing a Web site for the Internet or an Intranet.</p>
+    <p id="p1">This is to show the id selector</p><!--The background color remains black unless changed in p1 
+                                                    since it was made black in the element selector "p"-->
+
+    <h3 class="p2">This is to show an example of the class selector</h3>
+    <p>This is to show an example without the id or class selector</p>
+    <p class="p2">This is to show an example with the class selector</p>
+    <h2>This is to show the group selector </h2>
+    <button>blue</button><!--This is also to show the group selector-->
+    
+</body>
+</html>
